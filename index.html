@@ -3,19 +3,19 @@
 #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
 #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
 #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
 #5: The .main-section elements should contain at least 10 p elements total (not each).
-#6: The .main-section elements should contain at least 5 code elements total (not each).
-#7: The .main-section elements should contain at least 5 li items total (not each).
 
+#6: The .main-section elements should contain at least 5 code elements total (not each).
+
+#7: The .main-section elements should contain at least 5 li items total (not each).
 #8: I can see a nav element with a corresponding id="navbar".
 #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
 #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
 #11: The header element in the navbar must come before any link (a) elements in the navbar.
 #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
 #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
 #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+
 #15: My Technical Documentation page should use at least one media query. -->
 
 <!DOCTYPE html>
@@ -28,45 +28,73 @@
     <link rel="stylesheet" href='styles.css'>
 </head>
 <body>
-    <nav id="mavbar">
-        <h1 id="header-title">Documentation Title</h1>
-        <a href="#topic_1" class="nav-link">Topic 1</a>
-        <a href="#topic_2" class="nav-link">Topic 2</a>
-        <a href="#topic_3" class="nav-link">Topic 3</a>
-        <a href="#topic_4" class="nav-link">Topic 4</a>
-        <a href="#topic_5" class="nav-link">Topic 5</a>
-        <a href="#topic_6" class="nav-link">Topic 6</a>
-    </nav>
-
-
-
-    <div id="main-doc">
-        <div class="main-section" id="topic_1">
-            <h2>Topic 1</h2>
+    <div id="main">
+        <div id="navbar-bg">
+            <nav id="navbar">
+                <h1 id="header-title">Documentation</h1>
+                <a href="#topic_1" class="nav-link">Topic 1</a>
+                <a href="#topic_2" class="nav-link">Topic 2</a>
+                <a href="#topic_3" class="nav-link">Topic 3</a>
+                <a href="#topic_4" class="nav-link">Topic 4</a>
+                <a href="#topic_5" class="nav-link">Topic 5</a>
+                <a href="#topic_6" class="nav-link">Topic 6</a>
+            </nav>
         </div>
 
-        <div class="main-section" id="topic_2">
-            <h2>Topic 2</h2>
-        </div>
 
-        <div class="main-section" id="topic_3">
-            <h2>Topic 3</h2>
-        </div>
+        <div id="main-doc">
+            <div class="main-section" id="topic_1">
+                <h2>Topic 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis sunt aperiam magnam. Rem quo nam asperiores eius laboriosam delectus minima, omnis cum eum doloremque?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore unde recusandae quae voluptatum commodi impedit?</p>
+            </div>
 
-        <div class="main-section" id="topic_4">
-            <h2>Topic 4</h2>
-        </div>
+            <div class="main-section" id="topic_2">
+                <h2>Topic 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eligendi repellendus repellat minima quam iure, et iusto ad at veniam similique dolorum temporibus aliquid deleniti quidem minus aspernatur quaerat voluptatibus eaque maxime velit! Exercitationem non inventore ea dolore, consequatur quibusdam!</p>
+                <ol>
+                    <li>Step one</li>
+                    <li>Step two</li>
+                    <li>Step three</li>
+                    <li>Step four</li>
+                    <li>Step five</li>
+                </ol>
+            </div>
 
-        <div class="main-section" id="topic_5">
-            <h2>Topic 5</h2>
-        </div>
+            <div class="main-section" id="topic_3">
+                <h2>Topic 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officia maxime consequatur aut.</p>
+                <br>
+                <code>
+                    x = 5;
+                    y = 6;
+                    z = x + y;
+                </code> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo quia veritatis. Temporibus quia blanditiis aperiam id fugit, accusantium praesentium.</p>
+            </div>
 
-        <div class="main-section" id="topic_6">
-            <h2>Topic 6</h2>
-        </div>
+            <div class="main-section" id="topic_4">
+                <h2>Topic 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur blanditiis quaerat corporis fugiat? Ullam debitis libero assumenda atque molestiae autem distinctio asperiores nemo tempore et maxime porro, nam numquam? Quae odio culpa nulla pariatur aliquid iure magni natus dolorum nostrum saepe, modi atque fuga ex, commodi praesentium sed nisi possimus.</p>
+            </div>
 
+            <div class="main-section" id="topic_5">
+                <h2>Topic 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo sunt natus vero numquam, nam dicta reprehenderit impedit totam sint tempore, recusandae perferendis magnam culpa quidem placeat, delectus ad animi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rem magni voluptates a deserunt! Obcaecati ab consectetur eligendi!</p>
+            </div>
+
+            <div class="main-section" id="topic_6">
+                <h2>Topic 6</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, totam officiis? Cumque iure exercitationem dolorum accusantium deleniti facere laboriosam ut doloremque optio! Nemo laudantium iste veniam at aliquid culpa eius. Eos, doloremque deserunt recusandae doloribus ipsum natus pariatur. Blanditiis porro voluptatibus fugiat reprehenderit similique. Facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, exercitationem?</p>
+            </div>
+
+        </div>
     </div>
-
 
 
 

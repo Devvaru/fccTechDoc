@@ -1,19 +1,73 @@
-#navbar {
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
 
+h2 {
+    color: #382E32;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+
+body {
+    margin: 0px;
+    font-family: montserrat, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-flow: row;
+    background-color: #9B9194;
+}
+
+#navbar-bg {
+    background: linear-gradient(180deg, #362D30 0%, #2E2629 100%);
+}
+
+#navbar {   
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 50px;
+    position: sticky;
+    top: 0;
 }
 
 #header-title {
-
+    color: #fff;
+    padding: 50px;
+    font-weight: 400;
 }
 
 .nav-link {
+    color: #fff;
+    padding: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.nav-link:hover {
+    background-color: #5B5154;
+}
+
+.nav-link:active {
+    background-color: #5B5154;
 }
 
 #main-doc {
-
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 25px;
 }
 
 .main-section {
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 50px;
+}
 
+code {
+    background-color: #5B5154;
 }
