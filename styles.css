@@ -38,6 +38,12 @@ body {
     font-weight: 400;
 }
 
+@media (max-width: 1201px) {
+    #header-title {
+        padding: 25px;
+    }
+}
+
 .nav-link {
     color: #fff;
     padding: 25px;
@@ -63,9 +69,21 @@ body {
     row-gap: 25px;
 }
 
+@media (max-width: 1201px) {
+    #main-doc {
+        padding: 25px;
+    }
+}
+
 .main-section {
     background-color: rgba(255, 255, 255, 0.37);
     padding: 50px;
+}
+
+@media (max-width: 1201px) {
+    .main-section {
+        padding: 25px;
+    }
 }
 
 code {
