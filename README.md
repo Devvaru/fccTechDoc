@@ -1,3 +1,3 @@
 # fccTechDoc
 FreeCodeCamp - Technical Documentation Page
-https://syeraru.github.io/fccTechDoc/
+https://devvaru.github.io/fccTechDoc/
